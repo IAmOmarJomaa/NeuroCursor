@@ -176,5 +176,5 @@ NeuroCursor uses a strictly mapped language of 24 gestures, vetting every input 
     ```bash
     python -m run
 
-### Engineered by Omar Jomaa ⚙️  
+### Engineered by [Omar Jomaa](https://github.com/IAmOmarJomaa) ⚙️  
 ### Powered by Caffeine ☕
