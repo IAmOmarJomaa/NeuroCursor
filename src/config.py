@@ -32,30 +32,30 @@ PATHS = {
 # This list MUST match that sorted order. If you add a label, you must
 # retrain the model and verify this list matches the folder structure.
 GESTURE_LABELS = [
-    "CTRL_PINKY",       # C - Copy/Paste Modifier
-    "CUT",              # C
+    "CTRL_PINKY",       # C - toggle ctrl
+    "CUT",              # C - CUT
     "DELETE_CLOSED",    # D - Phase 2 of Delete
     "DELETE_OPENED",    # D - Phase 1 of Delete
     "FIST",             # F - Scroll Mode / Drag Anchor
     "GEN_Z",            # G - Locking Mechanism
-    "NEXT_CLOSED",      # N - Browser Forward
-    "NEXT_OPENED",      # N
+    "NEXT_CLOSED",      # N - Phase 1 of Browser Forward
+    "NEXT_OPENED",      # N - Phase 2 of Browser Forward
     "NOISE_RANDOM",     # N - Null State
-    "PALM",             # P - Reset / Kill Switch
-    "PREVIOUS_CLOSED",  # P - Browser Back
-    "PREVIOUS_OPENED",  # P
-    "RESTING",          # R
-    "RIGHT_CLICK",      # R
-    "SCROLL",           # S
+    "PALM",             # P - Phase 1 of copy and cut and select all and wave goodbye
+    "PREVIOUS_CLOSED",  # P - Phase 1 of Browser Back
+    "PREVIOUS_OPENED",  # P - Phase 2 of Browser Back
+    "RESTING",          # R - resting position
+    "RIGHT_CLICK",      # R - right click
+    "SCROLL",           # S - scroll
     "TAB_L",            # T - Alt Tab Left
     "TAB_M",            # T - Alt Tab Menu
     "TAB_R",            # T - Alt Tab Right
-    "THE_CLICK",        # T
-    "THE_POINT",        # T
-    "THE_SHHH",         # T - Mute (Experimental)
-    "VOLUME",           # V
+    "THE_CLICK",        # T - click
+    "THE_POINT",        # T - hover
+    "THE_SHHH",         # T - Mute
+    "VOLUME",           # V - volume controll
     "WIN",              # W - Win Key / Task View
-    "ZOOM"              # Z
+    "ZOOM"              # Z - zoom controll
 ]
 
 # --- MASTER CONFIGURATION ---

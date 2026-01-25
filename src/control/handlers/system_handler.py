@@ -12,6 +12,7 @@ class SystemHandler:
         self.prev_zoom_dist = None
         self.ctrl_timer_start = 0
         self.ctrl_gesture_handled = False
+        self.last_mute_time = 0
 
     def handle(self, ctx: HandlerContext):
         now = time.time()
@@ -72,3 +73,10 @@ class SystemHandler:
                 self.prev_zoom_dist = None
         else:
             self.prev_zoom_dist = None
+        # Mute Toggle (The Shhh)
+        if ctx.hand.gesture == Gesture.THE_SHHH:
+            # 1.0s Cooldown to prevent rapid toggling
+            if (now - self.last_mute_time) > 3.0:
+                print("🤫 MUTE TOGGLED")
+                ctx.actions.toggle_mute()
+                self.last_mute_time = now
